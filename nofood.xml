@@ -1,1 +1,51 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_repeat" id="22" inline="true" x="101" y="47">
+    <value name="TIMES">
+      <block type="math_number" id="29">
+        <field name="NUM">9999999</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="oled_cleardisplay" id="45">
+        <next>
+          <block type="oled_setcursor" id="54" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="76">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <value name="STARTY">
+              <block type="math_number" id="83">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <next>
+              <block type="oled_drawtext" id="131">
+                <field name="TEXT">get away </field>
+                <next>
+                  <block type="oled_setcursor" id="172" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="212">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="219">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="oled_drawtext" id="197">
+                        <field name="TEXT">from fridge</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
