@@ -23,20 +23,24 @@
               <block type="oled_drawtext" id="131">
                 <field name="TEXT">get away </field>
                 <next>
-                  <block type="oled_setcursor" id="172" inline="true">
-                    <value name="STARTX">
-                      <block type="math_number" id="212">
-                        <field name="NUM">10</field>
-                      </block>
-                    </value>
-                    <value name="STARTY">
-                      <block type="math_number" id="219">
-                        <field name="NUM">13</field>
-                      </block>
-                    </value>
+                  <block type="oled_cleardisplay" id="251">
                     <next>
-                      <block type="oled_drawtext" id="197">
-                        <field name="TEXT">from fridge</field>
+                      <block type="oled_setcursor" id="172" inline="true">
+                        <value name="STARTX">
+                          <block type="math_number" id="212">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
+                        <value name="STARTY">
+                          <block type="math_number" id="219">
+                            <field name="NUM">13</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="oled_drawtext" id="197">
+                            <field name="TEXT">from fridge</field>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
